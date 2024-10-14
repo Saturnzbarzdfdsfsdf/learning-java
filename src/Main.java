@@ -61,6 +61,14 @@ public class Main {
 
     }
 
+    // Метод для вывода массива
+    static void printArray(int[] array) {
+        for (int num : array) {
+            System.out.print(num + " ");
+        }
+        System.out.println(); // Переход на новую строку после вывода массива
+    }
+
     // Минимальный и максиальный елемент
     static void MinMax(int[] minMax) {
 
@@ -79,13 +87,5 @@ public class Main {
 
         System.out.println("Минимум: " + min);
         System.out.println("Максимум: " + max);
-    }
-
-    // Метод для вывода массива
-    static void printArray(int[] array) {
-        for (int num : array) {
-            System.out.print(num + " ");
-        }
-        System.out.println(); // Переход на новую строку после вывода массива
     }
 }
