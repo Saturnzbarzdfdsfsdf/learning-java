@@ -3,16 +3,15 @@ package animal;
 
 public class Beast extends Animal {
 
-    public Beast(String name, boolean swim, boolean jump, boolean run) {
+    public Beast(String name, int maxRunDistance, int maxJumpHeight, int maxSwimDistance) {
         this.name = name;
-        this.swim = swim;
-        this.jump = jump;
-        this.run = run;
-
+        this.maxRunDistance = maxRunDistance;
+        this.maxJumpHeight = maxJumpHeight;
+        this.maxSwimDistance = maxSwimDistance;
     }
 
     public void beastInfo() {
-        System.out.println("Beast: " + name + "Can run: " + run + " Can swim: " + swim + "Can jump: " + jump);
+        System.out.println("Beast: " + name + "Max run: " + maxRunDistance + " Max swim: " + maxSwimDistance + "Max jump: " + maxJumpHeight);
     }
 
 }
